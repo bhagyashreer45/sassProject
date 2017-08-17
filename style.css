@@ -1,0 +1,200 @@
+#nav {
+  background-color: #ffa516;
+  height: 72px;
+  width: 100%; }
+  #nav #logo {
+    vertical-align: top;
+    margin-left: 70px; }
+
+.list, .list li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  display: inline-block; }
+  .list li {
+    margin: 30px 20px 5px;
+    padding: 10px;
+    float: left; }
+    .list li a {
+      display: inline-block;
+      color: black;
+      text-decoration: none; }
+  .list li:hover {
+    background-image: url("images/menu-hover.gif");
+    background-repeat: no-repeat; }
+
+.banner {
+  background-image: url("images/dog.jpg");
+  background-repeat: no-repeat;
+  height: 600px;
+  background-repeat: no-repeat; }
+
+.flex-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.flex-box {
+  height: 200px;
+  width: 300px; }
+
+.div3 .content {
+  color: #66020f;
+  text-align: justify; }
+  .div3 .content a {
+    color: #ffa516; }
+
+.div3 .head {
+  font-size: 20px;
+  font-weight: 600; }
+
+.dispBox {
+  height: 300px;
+  width: 300px;
+  position: relative;
+  margin-top: 0;
+  vertical-align: top; }
+  .dispBox .search {
+    background-color: #ffc81f;
+    padding: 20px;
+    border-radius: 5px; }
+  .dispBox #tab {
+    font-size: 0;
+    margin: 5% 0 0 0; }
+    .dispBox #tab .item {
+      background-repeat: no-repeat;
+      display: inline-block;
+      margin: 0;
+      padding: 2px;
+      font-size: large; }
+    .dispBox #tab .tabInfo {
+      background-color: #ffda8f;
+      padding: 5px;
+      border-radius: 5px; }
+      .dispBox #tab .tabInfo .tabItem {
+        background-image: url("images/bg-list-item.gif");
+        background-repeat: no-repeat;
+        padding: 0 0 0 3px;
+        font-size: 14px;
+        height: 32px;
+        width: 100%;
+        color: #aa834c; }
+        .dispBox #tab .tabInfo .tabItem a {
+          float: right;
+          padding-right: 20px;
+          color: orange;
+          text-decoration: none; }
+  .dispBox #btn1 {
+    background-image: url("images/bg-tab1.gif");
+    background-repeat: no-repeat;
+    text-decoration: none;
+    color: #66020f; }
+    .dispBox #btn1 a {
+      font-size: medium;
+      text-decoration: none; }
+  .dispBox #btn2 {
+    width: 140px;
+    background-image: url("images/bg-tab2.gif");
+    background-repeat: no-repeat;
+    text-decoration: none;
+    color: #66020f; }
+    .dispBox #btn2 a {
+      font-size: medium;
+      text-decoration: none; }
+
+.align {
+  margin-left: 15%; }
+
+.table {
+  display: table; }
+  .table .row {
+    display: table-row; }
+    .table .row .cell {
+      display: table-cell; }
+
+.div1 {
+  background-color: #ffe6b6;
+  width: 100%;
+  height: 150px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .div1 .bg {
+    height: 100px;
+    width: 300px;
+    margin: 10px; }
+  .div1 #img1 {
+    background-image: url("images/organic-and-chemical-free.jpg");
+    background-repeat: no-repeat; }
+  .div1 #img2 {
+    background-image: url("images/good-food.jpg");
+    background-repeat: no-repeat; }
+  .div1 #img3 {
+    background-image: url("images/pet-grooming.jpg");
+    background-repeat: no-repeat; }
+
+.div2 {
+  background-color: #66020f;
+  width: 100%;
+  height: 250px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .div2 .bg1 {
+    height: 180px;
+    width: 240px;
+    margin: 10px;
+    color: white;
+    padding-top: 70px;
+    text-align: justify; }
+  .div2 .para {
+    color: green;
+    font-weight: bold; }
+  .div2 .link {
+    color: #ad1e0d; }
+  .div2 #p1 {
+    background-image: url("images/friendly-pets.jpg");
+    background-repeat: no-repeat; }
+  .div2 #p2 {
+    background-image: url("images/pet-lover2.jpg");
+    background-repeat: no-repeat; }
+  .div2 #p3 {
+    background-image: url("images/healthy-dog.jpg");
+    background-repeat: no-repeat; }
+  .div2 #p4 {
+    background-image: url("images/pet-lover.jpg");
+    background-repeat: no-repeat; }
+
+footer {
+  background-color: #ffa516;
+  height: 40px;
+  padding: 15px;
+  text-align: center; }

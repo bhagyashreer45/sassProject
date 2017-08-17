@@ -1,0 +1,233 @@
+$margin:70px;
+$color: #ffa516;
+$ht: 72px;
+$wt:100%;
+$disp: inline;
+$none: none;
+$inlineBlock:inline-block;
+$borderRadius:5px;
+
+@mixin color($color){
+  background-color:$color ;
+}
+
+@mixin bgImage($path){
+  background-image: url($path);
+  background-repeat: no-repeat;
+}
+
+@mixin div($h, $w){
+  height: $h;
+  width: $w;
+}
+
+@mixin tab($bg,$d, $c){
+  @include bgImage($bg);
+  text-decoration: $d;
+  color: $c;
+}
+
+#nav{
+  @include color(#ffa516);
+  height: $ht;
+  width: $wt;
+  #logo{
+    vertical-align: top;
+   margin-left: $margin;
+  }
+}
+
+.list{
+  list-style-type: $none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  display: $inlineBlock;
+
+  li{
+    @extend .list;
+    margin: 30px 20px 5px;
+    padding: 10px;
+    float: left;
+    a{
+      display: $inlineBlock;
+      color: black;
+      text-decoration: none;
+    }
+  }
+  li:hover{
+    @include bgImage("images/menu-hover.gif");
+  }
+}
+
+.banner{
+  @include bgImage("images/dog.jpg");
+
+  height: 600px;
+  background-repeat: no-repeat;
+}
+
+.flex-container{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+
+.flex-box{
+  @include div(200px, 300px);
+}
+
+.div3{
+  .content{
+    color: #66020f;
+    text-align: justify;
+    a{
+      color: $color;
+    }
+  }
+  .head{
+    font-size: 20px;
+    font-weight: 600;
+  }
+}
+
+.dispBox{
+  @include div(300px, 300px);
+  position: relative;
+ // margin-left: 40px ;
+  margin-top: 0;
+
+  vertical-align: top;
+  .search{
+    background-color: #ffc81f;
+    padding: 20px;
+    border-radius: $borderRadius;
+  }
+
+  #tab{
+      font-size: 0;
+      margin: 5% 0 0 0 ;
+      .item{
+        background-repeat: no-repeat;
+        display: $inlineBlock;
+        margin: 0;
+        padding: 2px;
+        font-size: large;
+      }
+    .tabInfo{
+      @include color(#ffda8f);
+      padding: 5px;
+     // height: 250px;
+      border-radius: $borderRadius;
+      .tabItem{
+        @include bgImage("images/bg-list-item.gif");
+        padding: 0 0 0 3px;
+        font-size: 14px;
+        height: 32px;
+        width: 100%;
+        color: #aa834c;
+          a{
+            float: right;
+            padding-right: 20px;
+            color: orange;
+            text-decoration: none;
+          }
+
+      }
+    }
+
+  }
+  #btn1{
+    @include tab("images/bg-tab1.gif", none, #66020f );
+    a{
+      font-size: medium;
+      text-decoration: none;
+    }
+  }
+  #btn2 {
+    width: 140px;
+    @include tab("images/bg-tab2.gif", none, #66020f);
+    a{
+      font-size: medium;
+        text-decoration: none;
+    }
+  };
+}
+.align{
+  margin-left: 15%;
+}
+.table{
+  display: table;
+  .row{
+    display: table-row;
+    .cell{
+      display: table-cell;
+    }
+  }
+}
+
+.div1{
+  @include color(#ffe6b6);
+  width:$wt;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .bg{
+    @include div(100px, 300px);
+    margin: 10px;
+  }
+
+  #img1{
+    @include bgImage('images/organic-and-chemical-free.jpg');
+  }
+  #img2{
+    @include bgImage('images/good-food.jpg');
+  }
+  #img3{
+    @include bgImage('images/pet-grooming.jpg');
+  }
+}
+
+.div2{
+  @include color(#66020f);
+  width:$wt;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .bg1{
+    @include div(180px, 240px);
+    margin: 10px;
+    color: white;
+    padding-top: 70px;
+    text-align: justify;
+  }
+  .para{
+      color: green;
+      font-weight: bold;
+  }
+  .link{
+    color: #ad1e0d;
+  }
+  #p1{
+    @include bgImage('images/friendly-pets.jpg');
+  }
+  #p2{
+    @include bgImage('images/pet-lover2.jpg');
+  }
+  #p3{
+    @include bgImage('images/healthy-dog.jpg');
+  }
+  #p4{
+    @include bgImage('images/pet-lover.jpg');
+  }
+}
+
+footer{
+  @include color(#ffa516);
+  height: 40px;
+  padding: 15px;
+  text-align: center;
+}
